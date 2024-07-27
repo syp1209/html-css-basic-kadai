@@ -1,0 +1,96 @@
+header {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+/* @media screen and (max-width: 768px) {
+  div {
+      display: block;
+  }
+} */
+@media screen and (max-width: 768px) {
+  h2 {
+      font-size:30px;
+  }
+
+  p {
+      font-size:25px;
+  }
+
+  #parent {
+      flex-direction: column;
+  }
+}
+h1 {
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+a{
+  font-size: 20px;
+color:rgb(255, 255, 255);
+}
+a:visited {
+  color: rgb(193, 234, 251);
+}
+a:hover {
+  color: rgb(245, 178, 168);
+}
+
+
+main {
+  margin:10px;
+}
+
+#parent {
+  /* displayプロパティを使い、id名parentの要素をFlexコンテナにします。 */
+  display: flex;
+  justify-content:space-around;
+  padding: 5px;
+}
+
+.contents {
+border: 3px solid rgb(238, 204, 204);
+flex-basis: 25%;
+padding: 10px 15px;
+margin: 20px 0;
+text-align: center;
+
+}
+
+.contents > img {
+margin: 10px 0;
+width: 70%;
+}
+
+.contents p:nth-of-type(2)::first-letter  {
+  /* /* class名contents内の二番目のp要素内のテキストの中で一番目の文字にのみ、以下のスタイル設定をします。
+nth-of-type(n)とfirst-letterを組み合わせると表現できます。 */
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+h2 {
+font-size: 25px;
+border-bottom: dotted 3px rgb(236, 122, 122) ;
+
+}
+
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+} 
+
+footer {
+background-color: rgb(244, 79, 79);
+text-align: center;
+}
